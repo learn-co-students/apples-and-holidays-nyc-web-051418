@@ -1,0 +1,29 @@
+
+[1mFrom:[0m /home/ho-tonym/apples-and-holidays-nyc-web-051418/lib/holiday.rb @ line 95 Object#all_supplies_in_holidays:
+
+    [1;34m72[0m: [32mdef[0m [1;34mall_supplies_in_holidays[0m(holiday_hash)
+    [1;34m73[0m:   [1;34m# iterate through holiday_hash and print items such that your readout resembles:[0m
+    [1;34m74[0m:   [1;34m# Winter:[0m
+    [1;34m75[0m:   [1;34m#   Christmas: Lights, Wreath[0m
+    [1;34m76[0m:   [1;34m#   New Years: Party Hats[0m
+    [1;34m77[0m:   [1;34m# Summer:[0m
+    [1;34m78[0m:   [1;34m#   Fourth Of July: Fireworks, BBQ[0m
+    [1;34m79[0m:   [1;34m# etc.[0m
+    [1;34m80[0m:   str = [1;34;4mString[0m.new
+    [1;34m81[0m:     holiday_hash.each [32mdo[0m |season, holiday|
+    [1;34m82[0m:       str << [31m[1;31m"[0m[31m#{season.capitalize}[0m[31m: [1;31m"[0m[31m[0m
+    [1;34m83[0m:       holiday.each [32mdo[0m |holiday, stuff|
+    [1;34m84[0m:         array_holiday_words = holiday.to_s.split([31m[1;31m"[0m[31m_[1;31m"[0m[31m[0m)
+    [1;34m85[0m:           array_holiday_words.each [32mdo[0m |holiday_word|
+    [1;34m86[0m:             holiday_word.capitalize!
+    [1;34m87[0m:           [32mend[0m
+    [1;34m88[0m:           array_holiday_words.join
+    [1;34m89[0m:         str << [31m[1;31m"[0m[31m#{array_holiday_words}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m90[0m:       [32mend[0m
+    [1;34m91[0m:     [32mend[0m
+    [1;34m92[0m:     puts [31m[1;31m<<-blah[0m[31m[0m
+    [1;34m93[0m:     str
+    [1;34m94[0m:     blah
+ => [1;34m95[0m:     binding.pry
+    [1;34m96[0m: [32mend[0m
+
